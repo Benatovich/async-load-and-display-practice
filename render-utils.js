@@ -34,6 +34,23 @@ export function renderRatDetails(rat) {
     
     return div;
 }
+export function renderCandy(candy) {
+    const div = document.createElement('div');
+    const nameEl = document.createElement('p');
+    const descriptionEl = document.createElement('p');
+
+    div.classList.add('candy-container');
+
+    nameEl.textContent = candy.name;
+    nameEl.classList.add('name');
+
+    descriptionEl.textContent = candy.description;
+    descriptionEl.classList.add('description');
+
+    div.append(nameEl, descriptionEl);
+    
+    return div;
+}
 export function renderTheories(theory) {
     const div = document.createElement('div');
     const nameEl = document.createElement('p');

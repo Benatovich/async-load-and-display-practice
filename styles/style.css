@@ -83,7 +83,7 @@ p {
     margin: 0px
 }
 
-#rat-list-container {
+#list-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -120,8 +120,30 @@ p {
     margin: 10px;
 }
 
-.rat-detail .name {
+.theory-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 225px;
+    height: 250px;
+    border: 5px solid black;
+    margin: 10px;
+}
+
+.name {
     font-size: 2rem;
+}
+
+.description {
+    padding: 10px;
+}
+
+.plausibility {
+    padding: 10px;
+}
+
+.antisemitic {
+    padding: 0;
 }
 
 .rat-detail .color {
@@ -139,15 +161,7 @@ p {
     /* margin: 20px;
     padding: 20px; */
 }
-/* 
-.rat-detail .age-and-breed {
-    height: 50px;
-    width: 100%;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-} */
+
 /* 
 .rat-detail img {
     margin: 40px;

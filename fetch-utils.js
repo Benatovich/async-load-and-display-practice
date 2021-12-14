@@ -11,7 +11,7 @@ const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 export async function getTheories() {
     const response = await client
-        .from('conspiracy theories')
+        .from('conspiracy-theories')
         .select();
 
     // console.log(response.data);
@@ -20,6 +20,14 @@ export async function getTheories() {
 export async function getRats() {
     const response = await client
         .from('rats')
+        .select();
+
+    console.log(response.data);
+    return response.data;
+}
+export async function getCandy() {
+    const response = await client
+        .from('candy')
         .select();
 
     console.log(response.data);
