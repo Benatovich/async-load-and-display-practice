@@ -34,3 +34,29 @@ export function renderRatDetails(rat) {
     
     return div;
 }
+export function renderTheories(theory) {
+    const div = document.createElement('div');
+    const nameEl = document.createElement('p');
+    const descriptionEl = document.createElement('p');
+    const plausibilityEl = document.createElement('p');
+    const antisemiticEl = document.createElement('p');
+
+    div.classList.add('theory-container');
+
+    nameEl.textContent = theory.name;
+    nameEl.classList.add('name');
+
+    descriptionEl.textContent = theory.description;
+    descriptionEl.classList.add('description');
+
+    plausibilityEl.textContent = theory.plausibility;
+    plausibilityEl.classList.add('plausibility');
+
+    antisemiticEl.textContent = theory.antisemitic;
+    antisemiticEl.classList.add('antisemitic');
+
+
+    div.append(nameEl, descriptionEl, plausibilityEl, antisemiticEl);
+    
+    return div;
+}
