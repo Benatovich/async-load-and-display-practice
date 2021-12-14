@@ -114,7 +114,10 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 600px;
+    width: 225px;
+    height: 175px;
+    border: 5px solid black;
+    margin: 10px;
 }
 
 .rat-detail .name {
@@ -123,18 +126,18 @@ p {
 
 .rat-detail .color {
     font-size: 1.2rem;
-    margin: 20px;
-    padding: 20px;
+    /* margin: 20px;
+    padding: 20px; */
 }
 .rat-detail .sex {
     font-size: 1.2rem;
-    margin: 20px;
-    padding: 20px;
+    /* margin: 20px;
+    padding: 20px; */
 }
 .rat-detail .living {
     font-size: 1.2rem;
-    margin: 20px;
-    padding: 20px;
+    /* margin: 20px;
+    padding: 20px; */
 }
 /* 
 .rat-detail .age-and-breed {
