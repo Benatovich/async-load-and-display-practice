@@ -19,6 +19,13 @@ export function renderRatDetails(rat) {
     sexEl.textContent = rat.sex;
     sexEl.classList.add('sex');
 
+    // if (rat.living === true) {
+    //     livingEl.textContent = `${rat.name} is still alive`;
+    // } else {
+    //     livingEl.textContent = `${rat.name} is no longer with us`;
+    // }
+  
+    livingEl.textContent = rat.living;
     livingEl.textContent = true ? `${rat.name} is still alive` : `${rat.name} is no longer with us`;
     livingEl.classList.add('living');
 
