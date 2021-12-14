@@ -8,7 +8,7 @@ export function renderRatDetails(rat) {
     const sexEl = document.createElement('p');
     const livingEl = document.createElement('p');
 
-    div.classList.add('rat-item');
+    div.classList.add('rat-detail');
 
     nameEl.textContent = rat.name;
     nameEl.classList.add('name');
