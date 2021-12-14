@@ -12,10 +12,7 @@ const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 export async function getRats() {
     const response = await client
         .from('rats')
-        .select(`
-        *,
-        makes (*)
-    `);
+        .select();
 
     console.log(response.data);
     return response.data;
