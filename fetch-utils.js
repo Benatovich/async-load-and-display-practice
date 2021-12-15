@@ -33,6 +33,14 @@ export async function getCandy() {
     console.log(response.data);
     return response.data;
 }
+export async function getColors() {
+    const response = await client
+        .from('colors')
+        .select();
+
+    console.log(response.data);
+    return response.data;
+}
 
 // export async function getCars() {
 //     const response = await client

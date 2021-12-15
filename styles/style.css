@@ -162,6 +162,16 @@ p {
     padding: 20px; */
 }
 
+.color-container {
+    border: 5px solid black;
+    margin: 10px;
+}
+
+.candy-container {
+    border: 5px solid black;
+    margin: 10px;
+}
+
 /* 
 .rat-detail img {
     margin: 40px;

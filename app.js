@@ -1,6 +1,6 @@
 // import functions and grab DOM elements
-import { getCandy, getRats, getTheories } from './fetch-utils.js';
-import { renderCandy, renderRatDetails, renderTheories } from './render-utils.js';
+import { getCandy, getColors, getRats, getTheories } from './fetch-utils.js';
+import { renderCandy, renderColor, renderRatDetails, renderTheories } from './render-utils.js';
 
 const listContainer = document.getElementById('list-container');
 const ratButton = document.getElementById('rat-list-button');
@@ -40,6 +40,14 @@ candyButton.addEventListener('click', async() => {
     for (let candy of candies) {
         const candyEl = renderCandy(candy);
         listContainer.append(candyEl);
+    }
+});
+colorButton.addEventListener('click', async() => {
+    listContainer.textContent = '';
+    const colors = await getColors();
+    for (let color of colors) {
+        const colorEl = renderColor(color);
+        listContainer.append(colorEl);
     }
 });
 
